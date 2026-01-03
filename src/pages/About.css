@@ -1,0 +1,22 @@
+.about-hero {
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  padding: 3rem 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 6px 18px rgba(17,24,39,0.04);
+}
+.about-hero .lead { color: #4b5563; }
+
+.mission { margin-top: 2.25rem; }
+
+.stats { margin-top: 1.5rem; }
+.stat-item { background: #fff; border-radius: 0.5rem; padding: 1rem; box-shadow: 0 6px 18px rgba(17,24,39,0.04); }
+.stat-number { font-weight: 700; font-size: 1.375rem; color: #0d6efd; }
+
+.team { margin-top: 2rem; }
+.team-card { background: #fff; border-radius: 0.6rem; padding: 1rem; box-shadow: 0 8px 24px rgba(17,24,39,0.06); }
+.team-avatar { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; }
+.team-role { font-size: .9rem; color: #6b7280; }
+
+@media (max-width: 768px) {
+  .about-hero { padding: 1.5rem; }
+}
