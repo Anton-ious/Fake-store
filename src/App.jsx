@@ -3,13 +3,14 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Route, Routes, useLocation } from "react-router";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
 import ProductList from "./components/ProductList";
 import { Offline, Online } from "react-detect-offline";
 import ProductDetails from "./components/ProductDetails";
+import CartProducts from "./components/CartProducts";
 
 function App() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
               <Route path="/Contact" element={<Contact />} />
               <Route path="/Products" element={<ProductList />} />
               <Route path="/Products/:id" element={<ProductDetails />} />
+              <Route path="/CartProducts" element={<CartProducts />} />
             </Routes>
           </div>
         </div>

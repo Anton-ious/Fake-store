@@ -35,9 +35,9 @@ export default function Home() {
             attire, and accessories to suit every style and occasion.
           </p>
           <hr />
-          <button className="btn btn-outline-primary" onClick={() => prod()}>
+          <Link className="btn btn-outline-primary" to='/products' >
             See product
-          </button>
+          </Link>
         </div>
         <div className="produce_t">
           <h3>Women`s clothes</h3>

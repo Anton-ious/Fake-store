@@ -8,10 +8,10 @@ import { BrowserRouter } from "react-router";
 import ProductProvider from "./context/ProductContext.jsx";
 createRoot(document.getElementById("root")).render(
   <ProductProvider>
-    <BrowserRouter>
-      <StrictMode>
-          <App />
-      </StrictMode>
-    </BrowserRouter>
+    <StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </StrictMode>
   </ProductProvider>
 );

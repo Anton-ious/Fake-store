@@ -1,8 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router";
-import "./About.css";
 import heroImg from "../assets/image.avif";
+import { Link } from "react-router";
 
 export default function About() {
   const team = [

@@ -1,0 +1,52 @@
+/* Styles for Products listing page */
+
+.products-hero {
+  background: linear-gradient(90deg, rgba(79,79,252,0.05), rgba(30,247,250,0.015));
+  padding: 2.25rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(11,15,30,0.04);
+  text-align: center;
+}
+
+.products-hero .hero-title {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin: 0;
+  font-weight: 700;
+}
+
+.categories {
+  gap: .6rem;
+}
+
+.categories .btn {
+  border-radius: 999px;
+  padding: .45rem .9rem;
+  min-width: 140px;
+  color: var(--accent);
+  border-color: rgba(79,79,252,0.18);
+}
+
+/* Emphasize currently selected category if the button gets an "active" class */
+.categories .btn.active,
+.categories .btn:focus,
+.categories .btn:hover {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: white !important;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(79,79,252,0.14);
+}
+
+.products-list { padding-top: 1rem; }
+
+.products-list .row > [class*="col-"] { display: flex; }
+.products-list .card { flex: 1 1 auto; }
+
+/* Loading state */
+.loading-placeholder { min-height: 24vh; display:flex; align-items:center; justify-content:center; }
+
+/* small screens - denser layout */
+@media (max-width: 576px) {
+  .products-hero { padding: 1.4rem .8rem; }
+  .categories .btn { min-width: 120px; padding: .4rem .7rem; }
+}
