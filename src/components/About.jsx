@@ -84,7 +84,7 @@ export default function About() {
           {team.map((t) => (
             <div className="col-sm-6 col-md-4" key={t.name}>
               <div className="team-card d-flex gap-3 align-items-start">
-                <img src={heroImg} alt={t.name} className="team-avatar" />
+                <img src={heroImg} alt={t.name} className="w-25 rounded rounded-5 team-avatar" />
                 <div>
                   <div className="fw-bold">{t.name}</div>
                   <div className="team-role">{t.role}</div>
